@@ -95,6 +95,9 @@ image
 
 Then in the route project_name in a cmd console run php artisan migrate and the table is create in the database
 
+## Or if not use the php command run in the phpmyadmin the sentences from the archive in the project (wine.sql)
+
+
 ## Project structure
 
 After configure all requirements and files, we can see the different routes for the project. The project is a combination of rest api and web page
