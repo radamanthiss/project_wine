@@ -1,6 +1,5 @@
 <?php
 namespace App\Http\Controllers;
-
 use App\Rss;
 use Illuminate\Http\Request;
 use PhpAmqpLib\Connection\AMQPStreamConnection;
@@ -8,9 +7,6 @@ use PhpAmqpLib\Message\AMQPMessage;
 use PhpAmqpLib\Exception\AMQPException;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
-
-
-
 class HomeController extends Controller{
     
     public function inicio() {        
@@ -21,7 +17,6 @@ class HomeController extends Controller{
     public function recibir(Request $request){
         $str_logTxt = __CLASS__ . "->" . __FUNCTION__ . "::";
         $str_logTxt .= "queue_create::";
-        
         
         $wines = $request->input("wines");
         $response = Rss::getPubDate($wines);

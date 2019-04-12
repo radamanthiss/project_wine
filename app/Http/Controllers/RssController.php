@@ -15,6 +15,8 @@ class RssController extends Controller
         $str_LogTxt = __CLASS__ ."->". __FUNCTION__ ."::";
         $str_LogTxt .= "REQUEST: ". json_encode($request->toArray()). ";";
         try{
+            $update = DB::table('wine')->truncate();
+            
             $feed = file_get_contents($request->url);
             $rss = simplexml_load_string($feed);
             
@@ -28,6 +30,9 @@ class RssController extends Controller
                     'updated_at' => date("Y-m-d h:m:s")
                 ]);
             }
+            $str_LogTxt .= "RESPONSE_TRUNCATE: " . json_encode($update) . ";";
+            Log::debug($str_LogTxt);
+            
         }catch (\Exception $e){
             $str_LogTxt .= "[ERROR= " . $e->getMessage() . "];";
             Log::debug($str_LogTxt);

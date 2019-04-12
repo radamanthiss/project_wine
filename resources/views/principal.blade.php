@@ -4,7 +4,7 @@
 <title>Validation</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Sublime Contact Form Widget Responsive, Login form web template,Flat Pricing tables,Flat Drop downs  Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<meta name="keywords" content="principal, validation" />
 <!-- fonts -->
 <link href="//fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Muli:300,400" rel="stylesheet">

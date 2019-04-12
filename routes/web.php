@@ -21,4 +21,4 @@ $router->post('update_wine',['uses' => 'RssController@updateWine']);
 $router->get('home', ['uses' => 'HomeController@inicio']);
 $router->post('principal',['uses' => 'HomeController@recibir']);
 $router->post('show', ['uses' => 'HomeController@show']);
-    
+
